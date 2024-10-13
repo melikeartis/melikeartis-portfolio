@@ -60,18 +60,18 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio | KIRAN KUMAR U";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            $("#linkedinphoto").attr("href", "/Users/melikeartis/Desktop/ikiran-dev.github.io/assets/images/linkedinphoto.PNG");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            $("#linkedinphoto").attr("href", "assets/images/favhand.png");
         }
     });
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Machine Learning", "Backend Development", "Python Development", "Android Development", "Web Development"],
+    strings: ["Software Engineer", "Web Developer", "Content Manager"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
