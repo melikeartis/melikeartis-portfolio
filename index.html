@@ -2,26 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="KIRAN KUMAR U, portfolio, KIRAN, Web dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
     <meta name="description" content="Welcome to Kiran's Portfolio. Machine learning,Python Developer, Web Developer and Android App Developer" />
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='linkedinphoto' rel="shortcut icon" href="/Users/melikeartis/Desktop/ikiran-dev.github.io/assets/images/linkedinphoto.PNG" type="image/x-png">
+    <link id='linkedinphoto' rel="shortcut icon" href="./assets/images/linkedinphoto.PNG" type="image/x-png">
     <title>Portfolio | MELIKE ARTIS</title>
 </head>
 <body oncontextmenu="return false">
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
-
-<!-- navbar starts -->
 <header>
         <a href="/" class="logo"><i class="fab fa-node-js"></i> </a>
 
@@ -33,14 +22,13 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
 </header>
-<!-- navbar ends -->
 
 
-<!-- hero section starts -->
+<!-- intro -->
 <section class="home" id="home">
     <div id="particles-js"></div>
 
@@ -52,9 +40,9 @@
     </a>
     <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="www.linkedin.com/in/melike-artis-504542238/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/melike-artis-504542238/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
           <li><a class="github" aria-label="GitHub" href="https://github.com/melikeartis" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="email" aria-label="Email" href="martis2@uwo.ca"><i class="fas fa-envelope"></i></a></li>
+          <li><a class="email" aria-label="Email" href="mailto:martis2@uwo.ca"><i class="fas fa-envelope"></i></a></li>
         </ul>
       </div>
     </div>
@@ -62,61 +50,173 @@
   <img draggable="false" class="tilt" src="./assets/images/linkedinphoto.PNG" alt="Linkedinphoto">
 </div>
 </section>
-<!-- hero section ends -->
 
-
-<!-- about section starts -->
+<!-- about-->
 <section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
-    <div class="row">
+  <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+  
+  <div class="row">
+      <!-- Profile Image -->
+      <div class="image">
+          <img draggable="false" class="tilt" src="assets/images/me.JPEG" alt="Profile Picture">
+      </div>
 
-    <div class="image">
-        <img draggable="false" class="tilt" src="assets/images/me.JPEG" alt="">
-    </div>
-    <div class="content">
-        <span class="tag">Software Engineer | Web Developer | Content Manager</span>
-        
-        <p>I'm a passionate Bachelor of Software Engineering student at Western University with a strong interest in technology and creativity. Currently, I work as a Content Management Associate at the Schulich School of Medicine & Dentistry, where I enhance web content using HTML, CSS, and JavaScript while analyzing web traffic with Google Analytics to provide actionable insights. I value collaboration, innovation, and applying a diverse skill set to solve complex problems. Let’s connect and explore opportunities to collaborate on exciting projects! </p>
-        
-        <div class="box-container">
-            <div class="box">
-              <p><span> Email: </span>martis2@uwo.ca</p>
-            </div>
-        </div>
-        
-        <div class="resumebtn">
-            <a href="assets/images/Resume.pdf" target="_blank" class="btn"><span>Check out my resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
+      <!-- Content Section -->
+      <div class="content">
+          <span class="tag">Software Engineer | Web Developer | Content Manager</span>
 
-    </div>
-    </div>
+          <p>I'm a passionate Bachelor of Software Engineering student at Western University with a strong interest in technology and creativity. Currently, I work as a Content Management Associate at the Schulich School of Medicine & Dentistry, where I enhance web content using HTML, CSS, and JavaScript while analyzing web traffic with Google Analytics to provide actionable insights. I value collaboration, innovation, and applying a diverse skill set to solve complex problems. Let’s connect and explore opportunities to collaborate on exciting projects!</p>
+
+          <!-- Resume Button -->
+          <div class="resumebtn">
+              <a href="assets/images/Resume.pdf" target="_blank" class="btn"><span>Check out my resume</span>
+                  <i class="fas fa-chevron-right"></i>
+              </a>
+          </div>
+      </div>
+  </div>
 </section>
-<!-- about section ends -->
+
 
 <!-- skills section starts -->
 <section class="skills" id="skills">
 
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+  <h2 class="heading">
+    <i class="fas fa-laptop-code"></i> 
+    <span class="tech">Tech</span> 
+    <span class="stack">Stack</span>
+  </h2>
 
-    <div class="container">
-          <div class="row" id="skillsContainer">
-            <!-- <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-                <span>AdobeXD</span>
-              </div>
-            </div> -->
-
+  <!-- Technical Languages -->
+  <h3 class="subheading">TECHNICAL LANGUAGES</h3>
+  <div class="container align-left">
+    <div class="row" id="technicalLanguagesContainer">
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" alt="Java">
+        <h3>Java</h3>
       </div>
-</div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="C#">
+        <h3>C#</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML5">
+        <h3>HTML5</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3">
+        <h3>CSS3</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+        <h3>Python</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
+        <h3>C++</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frameworks & Tools -->
+  <h3 class="subheading">FRAMEWORKS & TOOLS</h3>
+  <div class="container align-left">
+    <div class="row" id="frameworksToolsContainer">
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000" alt="GitHub">
+        <h3>GitHub</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=55O6KKA9CyIA&format=png&color=000000" alt="Unity">
+        <h3>Unity</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" alt="JavaFX">
+        <h3>JavaFX</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=BZz399uT6eo0&format=png&color=000000" alt="SceneBuilder">
+        <h3>SceneBuilder</h3>
+      </div>
+      <div class="skill-box">
+        <img src="./assets/images/csm.png" alt="Cameo Systems Modeler">
+        <h3>CSM</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js">
+        <h3>Node.js</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technologies -->
+  <h3 class="subheading">TECHNOLOGIES</h3>
+  <div class="container align-left">
+    <div class="row" id="technologiesContainer">
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=fcKpGwAbxxfP&format=png&color=000000" alt="Google Analytics">
+        <h3>GA</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=r5Y16PcDkoWI&format=png&color=000000" alt="MATLAB">
+        <h3>MATLAB</h3>
+      </div>
+      <div class="skill-box">
+        <img src="./assets/images/quartus.png" alt="Quartus">
+        <h3>Quartus</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Software -->
+  <h3 class="subheading">SOFTWARE</h3>
+  <div class="container align-left">
+    <div class="row" id="softwareContainer">
+      <div class="skill-box">
+        <img src="./assets/images/onshape.png" alt="Onshape">
+        <h3>Onshape</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=6kZdxe7t8OL1&format=png&color=000000" alt="Microsoft Office Suite">
+        <h3>MS Office</h3>
+      </div>
+      <div class="skill-box">
+        <img src="./assets/images/adobe.png" alt="Adobe Creative Cloud">
+        <h3>Adobe CC</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=wue74HqaylSJ&format=png&color=000000" alt="Notion">
+        <h3>Notion</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=19978&format=png&color=000000" alt="Slack">
+        <h3>Slack</h3>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000" alt="Canva">
+        <h3>Canva</h3>
+      </div>
+      <div class="skill-box">
+        <img src="./assets/images/capcut.png" alt="CapCut">
+        <h3>CapCut</h3>
+      </div>
+    </div>
+  </div>
+
 </section>
 <!-- skills section ends -->
 
 
-<!-- education section starts -->
+
+
+
+
+
+<!-- education -->
 <section class="education" id="education">
 
   <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
@@ -129,25 +229,20 @@
         </div>
         <div class="content">
         <h3>Bachelor of Software Engineering</h3>
-        <p>Western University</p>
+        <p>Western University <br>Western Scholarship of Distinction (92% admission average)</p>
         <h4>2021-2026 | Pursuing</h4>
         </div>
     </div>
 
-    
-
-</div>
 </section>
-<!-- education section ends -->
 
-<!-- experience section starts -->
+<!-- experience -->
 <section class="experience" id="experience">
 
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+  <h2 class="heading"><i class="fas fa-briefcase"></i> My Experience </h2>
 
   <div class="timeline">
 
-    <!-- Content Management Associate -->
     <div class="container right">
       <div class="content">
         <div class="tag">
@@ -160,7 +255,6 @@
       </div>
     </div>
 
-    <!-- Freelance Makeup Artist -->
     <div class="container left">
       <div class="content">
         <div class="tag">
@@ -173,7 +267,6 @@
       </div>
     </div>
 
-    <!-- Shoppers Drug Mart -->
     <div class="container right">
       <div class="content">
         <div class="tag">
@@ -188,60 +281,172 @@
 
   </div>
 </section>
-<!-- experience section ends -->
 
-
-
-    
-  
-
-</div>
-
-</section>
-<!-- experience section ends -->
-
-<!-- contact section starts -->
-<section class="contact" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
+<section class="projects" id="projects">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> My <span>Projects</span></h2>
   <div class="container">
     <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
-      </div>
-    <form id="contact-form">
       
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
+<!-- Maze Runner Project -->
+<div class="dropdown">
+  <button class="dropdown-btn">Maze Runner</button>
+  <div class="dropdown-content">
+    <p>Developed a desktop game using Unity and C#, featuring 4 different levels with dynamic gameplay and collision detection algorithms. Integrated animations and physics simulation for an enhanced user experience.</p>
+    
+    <!-- GitHub logo linking to zip file -->
+    <div class="github-link">
+      <a href="https://drive.google.com/file/d/1X4_6OOYiz6ePdIGW2jGKCSki5ybC4Q81/view?usp=sharing" target="_blank">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="">
+      </a>
+    </div>
+    
+    <div class="video-wrapper">
+      <video src="assets/images/2250.mp4" controls></video>
+
+          </div>
   </div>
+</div>
+
+
+
+      <!-- Western MSA Project -->
+      <div class="dropdown">
+        <button class="dropdown-btn">Western MSA</button>
+        <div class="dropdown-content">
+          <!-- Nested Dropdown for Videos -->
+          <div class="dropdown">
+            <button class="dropdown-btn">Videos</button>
+            <div class="dropdown-content">
+              <!-- Grid for Videos -->
+              <div class="video-grid">
+                <video src="assets/images/Muslims on Campus.mov" controls></video>
+                <video src="assets/images/World Hijab Day vid.mov" controls></video>
+                <video src="assets/images/welcome week recap '24.mov" controls></video>
+                <video src="assets/images/mentorship promo.mov" controls></video>
+                <video src="assets/images/Ramadan Recap 24.mov" controls></video>
+                <video src="assets/images/0828(5).mov" controls></video>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nested Dropdown for Event Photos -->
+          <div class="dropdown">
+            <button class="dropdown-btn">Event Photos</button>
+            <div class="dropdown-content">
+              <div class="photo-gallery">
+                <div class="photo-grid">
+                  <img src="assets/images/IMG_1906.JPG" alt="Family Feud Event">
+                  <img src="assets/images/IMG_3676.JPG" alt="Games Night">
+                  <img src="assets/images/IMG_3679.JPG" alt="Games Night">
+                  <img src="assets/images/IMG_3702.JPG" alt="Games Night">
+                  <img src="assets/images/IMG_3727.JPG" alt="Games Night">
+                  <img src="assets/images/IMG_3766.JPG" alt="Games Night">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nested Dropdown for Graphics -->
+          <div class="dropdown">
+            <button class="dropdown-btn">Graphic Promos</button>
+            <div class="dropdown-content">
+              <div class="photo-gallery">
+                <div class="photo-grid">
+                  <img src="assets/images/Sister_s Swimming.png" alt="Swimming Event">
+                  <img src="assets/images/ski event.png" alt="Ski Event">
+                  <img src="assets/images/sisters.png" alt="Sister's Hangout">
+                  <img src="assets/images/brothers.png" alt="Brother's Hangout">
+                  <img src="assets/images/5.png" alt="Annual Iftar Recap">
+                  <img src="assets/images/Interfaith Sr. Mary Lecture .png" alt="Interfaith Lecture">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YCCI Project -->
+<div class="dropdown">
+  <button class="dropdown-btn">Youth Coalition Combatting Islamophobia (YCCI)</button>
+  <div class="dropdown-content">
+    <div class="media-grid">
+      <!-- Video -->
+      <video src="assets/images/yccivid.mov" controls></video>
+      <!-- Photos in two rows -->
+      <div class="photo-grid">
+        <img src="assets/images/ycci2.JPEG" alt="YCCI Photo 1">
+        <img src="assets/images/ycci4.JPEG" alt="YCCI Photo 2">
+        <img src="assets/images/ycci5.JPEG" alt="YCCI Photo 3">
+        <img src="assets/images/ycci7.JPEG" alt="YCCI Photo 4">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- London Royals Basketball Project -->
+      <div class="dropdown">
+        <button class="dropdown-btn">London Royals Basketball</button>
+        <div class="dropdown-content">
+          <div class="photo-gallery">
+            <div class="photo-grid">
+              <img src="assets/images/0.JPEG" alt="London Royal Basketball">
+              <img src="assets/images/1.JPG" alt="London Royal Basketball">
+              <img src="assets/images/2.JPG" alt="London Royal Basketball">
+              <img src="assets/images/3.JPG" alt="London Royal Basketball">
+              <img src="assets/images/4.JPG" alt="London Royal Basketball">
+              <img src="assets/images/5.JPG" alt="London Royal Basketball">
+              <img src="assets/images/6.JPEG" alt="London Royal Basketball">
+              <img src="assets/images/7.jpg" alt="London Royal Basketball">
+              <img src="assets/images/8.JPEG" alt="London Royal Basketball">
+              <img src="assets/images/9.JPEG" alt="London Royal Basketball">
+              <img src="assets/images/11.JPEG" alt="London Royal Basketball">
+              <img src="assets/images/royals1.JPG" alt="London Royal Basketball">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artis Home Staging Section -->
+<div class="dropdown">
+  <button class="dropdown-btn">Artis Home Staging</button>
+  <div class="dropdown-content">
+      <div class="video-container">
+          <video src="assets/images/House1.MP4" controls></video>
+          <video src="assets/images/House2.MP4" controls></video>
+      </div>
+  </div>
+</div>
+
+
+      <!-- Smart Study Space Allocation System Project -->
+      <div class="dropdown">
+        <button class="dropdown-btn">Smart Study Space Allocation System | COMING SOON!</button>
+        <div class="dropdown-content">
+           <p>The Smart Study Space Allocation System aims to optimise campus study space usage by providing real-time tracking of available study spots.</p>
+        </div>
+      </div>
+
+      <!-- Library Management System Project -->
+      <div class="dropdown">
+        <button class="dropdown-btn">Library Management System | COMING SOON!</button>
+        <div class="dropdown-content">
+           <p>The Library Management System will be a platform where users can search the catalogue, manage book holds and returns, view their reading history, and leave reviews.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
-<!-- contact section ends -->
 
 
-<!-- footer section starts -->
+
+
+
+
+
+
+<!-- footer -->
 <section class="footer">
 
   <div class="box-container">
@@ -266,7 +471,7 @@
           <p> <i class="fas fa-envelope"></i>martis2@uwo.ca</p>
           <p> <i class="fas fa-map-marked-alt"></i>London, ON, Canada</p>
           <div class="share">
-            <a class="linkedin" aria-label="LinkedIn" href="www.linkedin.com/in/melike-artis-504542238" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/melike-artis-504542238/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a class="github" aria-label="GitHub" href="https://github.com/melikeartis" target="_blank"><i class="fab fa-github"></i></a>
           </div>
       </div>
@@ -275,39 +480,20 @@
   <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="www.linkedin.com/in/melike-artis-504542238"> Melike</a></h1>
 
 </section>
-<!-- footer section ends -->
-
 
 <!-- scroll top btn -->
 <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
 
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- typed.js cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- particle.js links -->
 <script src="./assets/js/particles.min.js"></script>
 <script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
 <script src="https://unpkg.com/scrollreveal"></script>
-
 <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
 <script src="./assets/js/script.js"></script>
-
 </body>
 </html>

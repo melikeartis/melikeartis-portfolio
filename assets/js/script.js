@@ -15,7 +15,6 @@ $(document).ready(function () {
             document.querySelector('#scroll-top').classList.remove('active');
         }
 
-        // scroll spy
         $('section').each(function () {
             let height = $(this).height();
             let offset = $(this).offset().top - 200;
@@ -29,7 +28,7 @@ $(document).ready(function () {
         });
     });
 
-    // smooth scrolling
+    //smooth scrol
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
@@ -37,7 +36,7 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
+    //mail to mail contact form data
     $("#contact-form").submit(function (event) {
         emailjs.init("user_iLwvqcOmTVd55k20p");
 
@@ -52,24 +51,20 @@ $(document).ready(function () {
             });
         event.preventDefault();
     });
-    // <!-- emailjs to mail contact form data -->
+    //emailjs to mail contact form data
 
 });
 
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | KIRAN KUMAR U";
-            $("#linkedinphoto").attr("href", "/Users/melikeartis/Desktop/ikiran-dev.github.io/assets/images/linkedinphoto.PNG");
+            document.title = "Portfolio | Melike Artis";
+            $("#linkedinphoto").attr("href", "/Users/melikeartis/Desktop/MyPortfolio/assets/images/linkedinphoto.PNG");
         }
         else {
-            document.title = "Come Back To Portfolio";
-            $("#linkedinphoto").attr("href", "assets/images/favhand.png");
         }
     });
 
-
-// <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
     strings: ["Software Engineer", "Web Developer", "Content Manager"],
     loop: true,
@@ -77,7 +72,6 @@ var typed = new Typed(".typing-text", {
     backSpeed: 25,
     backDelay: 500,
 });
-// <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
     let response
@@ -127,22 +121,23 @@ function showProjects(projects) {
     });
     projectsContainer.innerHTML = projectHTML;
 
-    // <!-- tilt js effect starts -->
+    //tilt effect
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
         max: 15,
     });
-    // <!-- tilt js effect ends -->
+    //tilt effect
 
-    /* ===== SCROLL REVEAL ANIMATION ===== */
-    const srtop = ScrollReveal({
-        origin: 'top',
-        distance: '80px',
-        duration: 1000,
-        reset: true
-    });
+// ScrollReveal without affecting Maze Runner and Western MSA
+const srtop = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 1000,
+    reset: true
+});
 
-    /* SCROLL PROJECTS */
-    srtop.reveal('.work .box', { interval: 200 });
+// Apply ScrollReveal to other sections, excluding Maze Runner and Western MSA
+srtop.reveal('.home .content h3, .home .content p, .home .content .btn, .about .content h3, .about .content p, .about .content .box-container, .skills .container, .education .box, .work .box, .experience .timeline .container', { interval: 200 });
+
 
 }
 
@@ -154,24 +149,10 @@ fetchData("projects").then(data => {
     showProjects(data);
 });
 
-// <!-- tilt js effect starts -->
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
-// <!-- tilt js effect ends -->
 
-
-// pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
-// pre loader end
-
-// disable developer mode
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false;
@@ -201,7 +182,6 @@ const srtop = ScrollReveal({
     reset: true
 });
 
-/* SCROLL HOME */
 srtop.reveal('.home .content h3', { delay: 200 });
 srtop.reveal('.home .content p', { delay: 200 });
 srtop.reveal('.home .content .btn', { delay: 200 });
@@ -214,28 +194,30 @@ srtop.reveal('.home .telegram', { interval: 600 });
 srtop.reveal('.home .instagram', { interval: 600 });
 srtop.reveal('.home .dev', { interval: 600 });
 
-/* SCROLL ABOUT */
 srtop.reveal('.about .content h3', { delay: 200 });
 srtop.reveal('.about .content .tag', { delay: 200 });
 srtop.reveal('.about .content p', { delay: 200 });
 srtop.reveal('.about .content .box-container', { delay: 200 });
 srtop.reveal('.about .content .resumebtn', { delay: 200 });
 
-
-/* SCROLL SKILLS */
 srtop.reveal('.skills .container', { interval: 200 });
 srtop.reveal('.skills .container .bar', { delay: 400 });
 
-/* SCROLL EDUCATION */
 srtop.reveal('.education .box', { interval: 200 });
 
-/* SCROLL PROJECTS */
 srtop.reveal('.work .box', { interval: 200 });
 
-/* SCROLL EXPERIENCE */
 srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 400 });
 
-/* SCROLL CONTACT */
-srtop.reveal('.contact .container', { delay: 400 });
-srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+
+const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+
+dropdownButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('active');
+    const dropdownContent = button.nextElementSibling;
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+  });
+});
